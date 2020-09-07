@@ -1,0 +1,10 @@
+{
+  "default": {
+    "target": "http://localhost:8080",
+    "apis": ["/api/v1/**"]
+  },
+  "user": {
+    "target": "http://localhost:8081",
+    "apis": ["/api/v1/user/**"]
+  }
+}
