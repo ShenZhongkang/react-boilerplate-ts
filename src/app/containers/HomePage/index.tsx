@@ -1,5 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
+import { Button } from 'antd';
+import styles from './styles.module.scss';
 
 export function HomePage() {
   return (
@@ -8,7 +10,11 @@ export function HomePage() {
         <title>Home Page</title>
         <meta name="description" content="A Boilerplate application homepage" />
       </Helmet>
-      <span>HomePage container</span>
+      <div className={styles.container}>
+        <Button type="primary" danger={true}>
+          Turn off
+        </Button>
+      </div>
     </>
   );
 }
